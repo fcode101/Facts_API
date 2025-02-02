@@ -5,7 +5,7 @@ app = FastAPI()
 
 facts = []
 
-@app.get('/')
+@app.get('/random')
 def readfacts():
     with open('facts.txt', 'r') as file:
         for line in file: #removes whitespaces
